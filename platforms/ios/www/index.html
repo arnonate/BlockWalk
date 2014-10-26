@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BlockWalk St.Joe</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="apple-touch-startup-image" href="Default.png">
+        <link rel="apple-touch-icon" href="Icon@2x.png">
+
+        <link href="css/ionic.app.css" rel="stylesheet">
+
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="cordova.js"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() {
+                setTimeout(function() {
+                    navigator.splashscreen.hide();
+                }, 4000);
+            }
+        </script>
+
+        <script src="js/app.js"></script>
+    </head>
+
+    <body ng-app="bw" class="platform-ios platform-cordova platform-webview">
+        <ion-side-menus>
+            <!-- Center content -->
+            <ion-side-menu-content ng-controller="MainCtrl">
+                <ion-nav-view animation="slide-left-right"></ion-nav-view>
+            </ion-side-menu-content>
+
+            <!-- Left menu -->
+            <ion-side-menu side="left" ng-controller="StopListCtrl">
+                <ion-content>
+                    <ion-list>
+                        <ion-item nav-clear menu-close href="#/">
+                            <div class="menu-item">
+                                <img class="menu-item-img" src="img/bg.jpg"><span class="menu-item-title">Home</span>
+                            </div>
+                        </ion-item>
+                        <ion-item nav-clear menu-close href="#/about">
+                            <div class="menu-item">
+                                <img class="menu-item-img" src="img/downtown.jpg"><span class="menu-item-title">About</span>
+                            </div>
+                        </ion-item>
+                        <ion-item nav-clear menu-close href="#/stop/1">
+                            <div class="menu-item">
+                                <img class="menu-item-img" src="img/01.jpg"><span class="menu-item-title">Start</span>
+                            </div>
+                        </ion-item>
+                        <ion-item nav-clear menu-close href="#/stop/10">
+                            <div class="menu-item">
+                                <img class="menu-item-img" ng-src="img/foot.jpg"><span class="menu-item-title">Checkpoint 1</span>
+                            </div>
+                        </ion-item>
+                        <ion-item nav-clear menu-close href="#/stop/20">
+                            <div class="menu-item">
+                                <img class="menu-item-img" ng-src="img/foot.jpg"><span class="menu-item-title">Checkpoint 2</span>
+                            </div>
+                        </ion-item>
+                        <ion-item nav-clear menu-close href="#/stop/30">
+                            <div class="menu-item">
+                                <img class="menu-item-img" ng-src="img/foot.jpg"><span class="menu-item-title">Checkpoint 3</span>
+                            </div>
+                        </ion-item>
+                        <ion-item nav-clear menu-close href="#/stop/40">
+                            <div class="menu-item">
+                                <img class="menu-item-img" ng-src="img/foot.jpg"><span class="menu-item-title">Checkpoint 4</span>
+                            </div>
+                        </ion-item>
+                        <!-- <ion-item nav-clear menu-close href="#/stop/{{stop.id}}" ng-repeat="stop in stops"> -->
+                        <!--     <div class="menu-item"> -->
+                        <!--         <img class="menu-item-img" ng-src="img/{{stop.img}}"><span class="menu-item-title">{{stop.name}}</span> -->
+                        <!--     </div> -->
+                        <!-- </ion-item> -->
+                    </ion-list>
+                </ion-content>
+            </ion-side-menu>
+        </ion-side-menus>
+
+        <script id="walkthrough.html" type="text/ng-template">
+          <div class="modal">
+            <div class="bar bar-header bar-transparent">
+                <a ng-click="closeModal()" class="help help_close ion-close-round"></a>
+            </div>
+            <ion-content>
+                <ion-slide-box>
+                    <ion-slide>
+                        <img src="img/wt01.jpg" alt="">
+                        <p class="caption">Click GET STARTED to begin</p>
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="img/wt02.jpg" alt="">
+                        <p class="caption">SWIPE RIGHT to see all the stops</p>
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="img/wt03.jpg" alt="">
+                        <p class="caption">CHECKPOINTS mean you are making progress</p>
+                    </ion-slide>
+                </ion-slide-box>
+            </ion-content>
+            <div class="bar bar-footer bar-dark">
+              <div class="title"><a ng-click="closeModal()"><strong>Got it!</strong></a></div>
+            </div>
+          </div>
+        </script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-36512369-15', 'blockwalkstjoe.com');
+          ga('send', 'pageview');
+        </script>
+
+    </body>
+</html>

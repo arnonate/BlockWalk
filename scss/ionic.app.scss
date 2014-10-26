@@ -1,0 +1,295 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "../www/lib/ionic/scss/ionic.scss";
+
+/* ---------------------------------------------------------------------------
+
+ Custom Styles
+ Author: @arnonate, @stjoeweb
+
+ -------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+ Global
+ -------------------------------------------------------------------------- */
+
+html {
+    background: #222325;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    color: white;
+    cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    color: white;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    padding: 15px 0 10px;
+    margin: 0;
+}
+
+a {
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------
+ Utility
+ -------------------------------------------------------------------------- */
+
+.start {
+    padding: 40px 0;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 30px auto 70px;
+}
+
+.help {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    &:before {
+        font-size: 24px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.pane,
+.view {
+    background: #222325 url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.pane {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ---------------------------------------------------------------------------
+ Menu Item
+ -------------------------------------------------------------------------- */
+
+.item-complex .item-content {
+    padding: 15px 40px 15px 15px;
+    background-color: #222325;
+}
+
+.item {
+    border-color: #444;
+    background-color: #222325;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+}
+
+.menu {
+    background-color: #222325;
+}
+
+.menu-item {
+    display: table;
+}
+
+.menu-item-img {
+    width: auto;
+    max-height: 30px;
+}
+
+.menu-item-title {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1;
+    color: white;
+    padding-left: 10px;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------------------------
+ Stop
+ -------------------------------------------------------------------------- */
+
+.stop {
+    background-color: #222325;
+    padding: 0 0 40px;
+}
+
+.stop-img {
+    width: 100%;
+    height: auto;
+}
+
+.stop-address {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    color: #dddddd;
+}
+
+.stop-sep {
+    margin: 0;
+    padding: 10px 0 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+
+.stop-audio {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px -2px;
+    padding: 0;
+    text-align: center;
+
+    button {
+        -webkit-appearance: none;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        color: white;
+        text-align: center;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-size: 30px;
+
+        &:active {
+            background: rgba(255,255,255,0.6);
+        }
+    }
+
+    .ion-ios7-play-outline {
+        margin-left: 3px;
+    }
+}
+
+.stop-bd {
+    margin: 0;
+    padding: 0 30px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.stop-bd_centered {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------------
+ Buttons
+ -------------------------------------------------------------------------- */
+
+.btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s linear;
+
+    &:active {
+        opacity: 1;
+        background: rgba(255,255,255,0.6);
+    }
+}
+
+.btn-center {
+    display: block;
+    max-width: 86%;
+    margin: 20px auto;
+}
+
+
+/* ---------------------------------------------------------------------------
+ Modal
+ -------------------------------------------------------------------------- */
+.modal {
+    background: #222325;
+}
+
+.bar-transparent {
+    background: #222325;
+    background: transparent;
+}
+
+.help_close {
+    top: 10px;
+    right: 10px;
+}
+
+.slider {
+    padding-top: 80px;
+}
+
+.slider-pager .slider-pager-page {
+    color: white;
+}
+
+.caption {
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 20px 0 50px;
+}

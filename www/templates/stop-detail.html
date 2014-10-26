@@ -1,0 +1,30 @@
+<ion-view title="'{{stop.name}}'">
+    <ion-content>
+        <div class="container">
+            <div class="stop">
+                <img class="stop-img" ng-src="img/{{stop.img}}" alt="">
+
+                <h1>{{stop.name}}</h1>
+                <p class="stop-address">{{stop.address}}</p>
+
+                <p class="stop-sep">...</p>
+
+                <div ng-if="stop.audio == 'true'" class="stop-audio" ng-controller="StopAudioCtrl">
+                    <button ng-click="play()" ng-show="!playing">
+                        <span class="ion-ios7-play-outline"></span>
+                    </button>
+                    <button ng-click="stop()" ng-show="playing">
+                        <span class="ion-ios7-pause-outline"></span>
+                    </button>
+                </div>
+
+                <p class="stop-bd" ng-if="stop.snippet" ng-bind-html="stop.snippet"></p>
+                <p class="stop-bd stop-bd_centered" ng-if="stop.encouragement" ng-bind-html="stop.encouragement"></p>
+
+                <a class="btn btn-center" href="{{next}}">Next</a>
+                <a class="btn btn-center" href="{{prev}}">Previous</a>
+                <a class="btn btn-center" href="#/">Home</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
