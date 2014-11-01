@@ -1,0 +1,30 @@
+2014-10-26 01:10:40.504 BlockWalk[20873:3145623] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/narnold/Library/Developer/CoreSimulator/Devices/4BF3CFE4-577E-44CE-9B45-34C2CF37021A/data/Containers/Data/Application/67F14531-5CC1-4984-A3A1-6F238FE71703/Library/Cookies/Cookies.binarycookies
+2014-10-26 01:10:40.596 BlockWalk[20873:3145623] Multi-tasking -> Device: YES, App: YES
+2014-10-26 01:10:40.603 BlockWalk[20873:3145623] Unlimited access to network resources
+2014-10-26 01:10:40.845 BlockWalk[20873:3145623] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-10-26 01:10:40.845 BlockWalk[20873:3145623] [CDVTimer][statusbar] 0.208020ms
+2014-10-26 01:10:40.845 BlockWalk[20873:3145623] [CDVTimer][TotalPluginStartup] 0.423014ms
+2014-10-26 01:10:41.648 BlockWalk[20873:3145623] Resetting plugins due to page load.
+2014-10-26 01:10:42.046 BlockWalk[20873:3145623] Finished load of: file:///Users/narnold/Library/Developer/CoreSimulator/Devices/4BF3CFE4-577E-44CE-9B45-34C2CF37021A/data/Containers/Bundle/Application/41DD4A11-855B-4C4B-8248-80160E61DF02/BlockWalk.app/www/index.html#/
+2014-10-26 01:10:42.047 BlockWalk[20873:3145623] ERROR: Plugin 'Device' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-10-26 01:10:42.047 BlockWalk[20873:3145623] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "Device1462777568",
+  "Device",
+  "getDeviceInfo",
+  [
+
+  ]
+]
+Oct 26 01:10:53 MBP.local rtcreporting[20873] <Info>: logging starts...
+Oct 26 01:10:53 MBP.local rtcreporting[20873] <Debug>: setMessageLoggingBlock: called
+Oct 26 01:11:19 MBP.local rtcreporting[20873] <Debug>: setMessageLoggingBlock: called
+Oct 26 01:11:36 MBP.local rtcreporting[20873] <Debug>: initWithSessionInfo: XPC connection interrupted
+2014-10-26 01:12:53.777 BlockWalk[21175:3148249] Multi-tasking -> Device: YES, App: YES
+2014-10-26 01:12:53.782 BlockWalk[21175:3148249] Unlimited access to network resources
+2014-10-26 01:12:53.940 BlockWalk[21175:3148249] [CDVTimer][keyboard] 0.454009ms
+2014-10-26 01:12:53.940 BlockWalk[21175:3148249] [CDVTimer][TotalPluginStartup] 0.606000ms
+2014-10-26 01:12:54.129 BlockWalk[21175:3148249] Resetting plugins due to page load.
+2014-10-26 01:12:54.508 BlockWalk[21175:3148249] Finished load of: file:///Users/narnold/Library/Developer/CoreSimulator/Devices/4BF3CFE4-577E-44CE-9B45-34C2CF37021A/data/Containers/Bundle/Application/FA9E36D9-9F4C-4600-81F5-5C7E732DEE39/BlockWalk.app/www/index.html#/
+Oct 26 01:12:59 MBP.local rtcreporting[21175] <Info>: logging starts...
+Oct 26 01:12:59 MBP.local rtcreporting[21175] <Debug>: setMessageLoggingBlock: called
+Oct 26 01:13:06 MBP.local rtcreporting[21175] <Debug>: initWithSessionInfo: XPC connection interrupted

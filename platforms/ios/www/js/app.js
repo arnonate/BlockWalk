@@ -99,7 +99,7 @@ angular.module('bw', ['ionic'])
 
         $scope.playing = false;
         $scope.audio = document.createElement('audio');
-        $scope.audio.src = 'audio/' + $scope.stop.mp3;
+        $scope.audio.src = 'http://blockwalkstjoe.com/audio/' + $scope.stop.mp3;
 
         $scope.play = function() {
             $scope.audio.play();
